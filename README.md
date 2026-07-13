@@ -1,9 +1,19 @@
 # AirPilot — Setup Steps
 
 ## Install
+```
+Download Python 3.11 (preferably the latest 3.11.x release), and during installation:
+```
+check "Add Python to PATH"
 
-1. Install Python from https://www.python.org/downloads/ — tick **"Add Python to PATH"** during install.
-2. Open the AirPilot folder, click the address bar, type `powershell`, press Enter.
+Then verify:
+
+python --version
+
+You should see something like:
+
+Python 3.11.x
+
 3. Create a virtual environment:
    ```
    python -m venv venv
