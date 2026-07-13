@@ -1,45 +1,62 @@
 # AirPilot — Setup Steps
 
 ## Install
-```
-Download Python 3.11 (preferably the latest 3.11.x release), and during installation:
-```
-check "Add Python to PATH"
 
-Then verify:
+1. Download **Python 3.11.x (64-bit)**:
+   https://www.python.org/downloads/release/python-3119/
 
-python --version
+2. During installation, check **"Add Python to PATH"**.
 
-You should see something like:
+3. Verify the installation:
 
-Python 3.11.x
-
-3. Create a virtual environment:
+   ```bash
+   python --version
    ```
+
+   You should see:
+
+   ```text
+   Python 3.11.x
+   ```
+
+4. Create a virtual environment:
+
+   ```bash
    python -m venv venv
    ```
-4. Activate it:
-   ```
+
+5. Activate it:
+
+   ```bash
    venv\Scripts\activate
    ```
-5. Install dependencies:
-   ```
+
+6. Install dependencies:
+
+   ```bash
    pip install -r requirements.txt
    ```
-6.If you do not have a requirements file, install them manually.
 
-```
-  pip install opencv-python mediapipe pyautogui numpy
-```
+7. If you do not have a `requirements.txt` file, install them manually:
+
+   ```bash
+   pip install opencv-python mediapipe pyautogui numpy
+   ```
+
+---
+
 ## Run
+
+```bash
+python temp.py
 ```
 
-python temp.py
+1. Allow camera access if Windows asks.
+2. Point your index finger at the top-left of your control area and press **Space**.
+3. Do the same for the bottom-right.
+4. Move your hand — the cursor follows your index finger.
 
-
-6. Allow camera access if Windows asks.
-7. Point your index finger at the top-left of your control area, press **Space**. Do the same for bottom-right.
-8. Move your hand — the cursor follows your index finger.
+---
 
 ## Gestures
 
@@ -56,8 +73,11 @@ python temp.py
 | Open palm | Freeze cursor |
 | Closed fist (hold) | Screenshot |
 
+---
+
 ## Keys
 
+```
 q : quit
 c : re-run mouse-control calibration
 m : toggle mirrored / left-handed control mode
@@ -69,26 +89,26 @@ p : toggle PRESENTATION mode (swipe hand left/right to change slides)
 w : toggle WRITE/DRAW mode (air-writing with your index finger)
 e : erase/clear the write-mode drawing canvas
 s : save the current write-mode drawing to a PNG
-x : calibrate the cm-measurement scale (hold both middle fingertips a known distance
-    apart, press SPACE in the webcam window, then type the real distance in cm)
+x : calibrate the cm-measurement scale (hold both middle fingertips a known distance apart, press SPACE in the webcam window, then type the real distance in cm)
 f : toggle fullscreen for the webcam window (starts in fullscreen by default)
 r : force-reload gestures_config.json immediately
 [ : make edges harder to reach (shrink reach margin)
 ] : make edges easier to reach (grow reach margin, less physical stretch needed)
+```
+
+---
+
+## Website
 
 
-## Website:
-1. Keep two terminal windows open.
+If you see **"Couldn't reach the config server"**, it means the backend is not running. Check the backend terminal for any error messages and start it again.
 
-Terminal 1: Run the backend (port 5000)
-Terminal 2: Run the frontend (port 5173)
+Lastly, open **`start_website.bat`**. This automatically opens the website.
 
-Do not close either terminal. If you close one, the app will stop working.
+Open:
 
-If you see "Couldn't reach the config server", it means the backend is not running. Check the backend terminal for any error messages and start it again.
+```
+http://localhost:5173
+```
 
-lastly open the start_website.bat file this automatiically opens the website
-
-Open http://localhost:5173
-
-and keep shortcuts on your own
+Keep shortcuts on your own.
