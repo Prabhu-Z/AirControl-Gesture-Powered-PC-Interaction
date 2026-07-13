@@ -40,7 +40,7 @@
 7. If you do not have a `requirements.txt` file, install them manually:
 
    ```bash
-   pip install opencv-python==5.0.0.93 mediapipe==0.10.14 pyautogui==0.9.54 numpy==1.26.4
+   pip install opencv-python mediapipe==0.10.14 pyautogui numpy
    ```
 
 ---
