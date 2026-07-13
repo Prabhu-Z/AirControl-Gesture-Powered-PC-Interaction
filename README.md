@@ -5,7 +5,7 @@
 1. Download **Python 3.11.x (64-bit)**:
    https://www.python.org/downloads/release/python-3119/
 
-2. During installation, check **"Add Python to PATH"**.
+2. During installation, check **" tick the box : Add Python to PATH or (environment)"**.
 
 3. Verify the installation:
 
