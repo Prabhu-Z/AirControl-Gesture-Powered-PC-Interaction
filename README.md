@@ -76,19 +76,8 @@ Terminal 2: Run the frontend (port 5173)
 Do not close either terminal. If you close one, the app will stop working.
 
 If you see "Couldn't reach the config server", it means the backend is not running. Check the backend terminal for any error messages and start it again.
-
-1.open 1st cmd and run this (below):
 ```
-cd gesture-config-web/server
-npm install
-npm start
-```
-2. open 2nd cmd and run this(below):
-```
-cd gesture-config-web/client
-npm install
-npm run dev
+lastly open the start_website.bat file this automatiically opens the website
 ```
 Open http://localhost:5173
-'''
 and keep shortcuts on your own
