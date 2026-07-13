@@ -20,12 +20,12 @@
 
 ```
   pip install opencv-python mediapipe pyautogui numpy
-
+```
 ## Run
+```
 
-```
 python temp.py
-```
+
 
 6. Allow camera access if Windows asks.
 7. Point your index finger at the top-left of your control area, press **Space**. Do the same for bottom-right.
@@ -76,8 +76,9 @@ Terminal 2: Run the frontend (port 5173)
 Do not close either terminal. If you close one, the app will stop working.
 
 If you see "Couldn't reach the config server", it means the backend is not running. Check the backend terminal for any error messages and start it again.
-```
+
 lastly open the start_website.bat file this automatiically opens the website
-```
+
 Open http://localhost:5173
+
 and keep shortcuts on your own
